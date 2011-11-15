@@ -1,0 +1,12 @@
++ Add overwrite protection to all the functions that require it (new, new directory, etc.).  Rename's been done; copy it.
+
++ Figure out how to retrieve the current directory for file.php... currently, it's going like "/db/.." instead of "/dir/".
+
++ Consolidate all new file, directory, renaming, etc. functions and have a switch which detects the action to take.. this will decrease file count.
+
++ Add dropdowns instead of images for functions.
+
++ Make the column names links to direct sorting.
++ Instead of having a button for functions like rename, have the pathname be editable merely by double clicking (or maybe single clicking, so it can mimic desktop software even further by making you have to double click to open it).
++ Add a menu to consolidate actions and try and keep the file list the same height as the file viewer box so you don't have to scroll up to modify something.
++ Keep action columns the same width in safari as in firefox. Copy seems to look right, need to see why. 
