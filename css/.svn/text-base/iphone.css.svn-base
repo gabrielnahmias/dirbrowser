@@ -1,7 +1,0 @@
-body { font-size: 5pt; }
-
-hr { margin-top: 10px; }
-
-#output { font-size: 5pt; }
-
-.ln { font-size: 5pt; }

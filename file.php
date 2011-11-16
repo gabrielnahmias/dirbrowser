@@ -10,19 +10,27 @@ else
 
 $dir = substr($file, 0, strrpos($file, "\\") );
 
+$br = new Browser;
+
 ?><html>
 <head>
 <title>File Viewer <?php print "v".VER.": ".basename($file); ?></title>
 
+<?php if ( $br->Platform == "iPhone" ): ?>
 <link rel="apple-touch-icon" href="img/touchfav.png" />
+<?php endif; ?>
 <link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="cb/colorbox.css" rel="stylesheet" type="text/css" />
 <link href="img/file.ico" rel="shortcut icon" /><?php
 css_add(); ?>
 
+<?php if ( $br->Platform == "iPhone" ): ?>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<?php endif; ?>
 
 <script src="js/jquery-1.4.4.min.js"></script>
 <script src="js/jquery.highlight-3.js"></script>
+<script src="cb/jquery.colorbox.min.js"></script>
 
 <script language="javascript">
 
@@ -102,7 +110,7 @@ $(document).ready( function() {
 		
 		$.get(
 			
-			"read.php",
+			"do.php?action=read",
 			
 			{ f: "<?php print str_replace("\\", "\\\\", $file); ?>" },
 			
@@ -170,7 +178,7 @@ $(document).ready( function() {
 		
 		$.get(
 			
-			"read.php",
+			"do.php?action=read",
 			
 			{ f: "<?php print str_replace("\\", "\\\\", $file); ?>" },
 			
@@ -180,7 +188,7 @@ $(document).ready( function() {
 					
 					$.post(
 						
-						"save.php",
+						"do.php?action=save",
 						
 						{ f: "<?php print str_replace("\\", "\\\\", $file); ?>",
 						  c: $("#textbox").val() },
@@ -242,12 +250,12 @@ $(document).ready( function() {
 
 </head>
 
-<body onorientationchange="updateOrientation();">
+<body<?php if ($br->Name == "iPhone") { ?> onorientationchange="updateOrientation();"<? } ?>>
 
 <?php
 
 if ( !file_exists($file) ):
-	die("Bad File!\r\n\r\n<br />\r\n<br /><a href=\"index.php\">Back to Home</a>");
+	die("<body onload=\"javascript:$.colorbox({html:'bad file!',title:'error'});\">");
 else:
 	
 	if ( isset( $_GET['fld'] ) && !empty( $_GET['fld'] ) )

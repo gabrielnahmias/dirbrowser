@@ -1,14 +1,29 @@
-v1.3.9 -	+ Started to migrate to supporting Unix-style paths (/usr/local/ as opposed to C:\Users\Local\)
-			+ Added basic upload support.
-			+ Added a new HTML file feature (saves a basic HTML template).
-			+ Changed the height of outputted files to match the textbox.
-			+ For the time being, files will be sorted only by type.  Old alphabetical sorting looked kinda ugly as far as the size column, at least, and was counter-intuitive.
-			+ Added a simple function that prints an extra line number area in output_file.php to pad out the top and bottom so the start and end of the file aren't so close to the edge. 
+v1.3.9 -
+	
+	+ Started to migrate to supporting Unix-style paths (/usr/local/ as opposed to C:\Users\Local\)
+	
+	+ Added basic upload support.
+	
+	+ Added a new HTML file feature (saves a basic HTML template).
+	
+	+ Changed the height of outputted files to match the textbox.
+	
+	+ For the time being, files will be sorted only by type.  Old alphabetical sorting looked kinda ugly as far as the size column, at least, and was counter-intuitive.
+	
+	+ Added a simple function that prints an extra line number area in output_file.php to pad out the top and bottom so the start and end of the file aren't so close to the edge. 
 
-v1.3.8 -	+ A few minor CSS tweaks.
-			+ Maintained consistency between linking to files on server on file.php.
-			+ In this same line, messed around with $folder variable to produce what would be expected on any server installation.
-			+ Added a copy of jquery v1.4.4 for offline functionality.
-			+ Fixed a glitch with copy.php in index.php which involved adding the directory to the front of the destination it at a different time.
+v1.3.8 -
+	
+	+ A few minor CSS tweaks.
+	
+	+ Maintained consistency between linking to files on server on file.php.
+	
+	+ In this same line, messed around with $folder variable to produce what would be expected on any server installation.
+	
+	+ Added a copy of jquery v1.4.4 for offline functionality.
+	
+	+ Fixed a glitch with copy.php in index.php which involved adding the directory to the front of the destination it at a different time.
 
-v1.3.6 and below - I have no idea!  Didn't keep track of the differences below this.
+v1.3.6 and below -
+	
+	I have no idea!  Didn't keep track of the differences below this.
