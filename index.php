@@ -2,9 +2,9 @@
 
 include_once "functions.php";
 include_once "version.php";
-include_once "../browser.php";
+include_once "./browser.php";
 
-file_put_contents("cb/ips.txt", "IP: " . $_SERVER['REMOTE_ADDR'] . "\r\nDate: " . date(DATE_FMT) . "\r\n\r\n" , FILE_APPEND);
+file_put_contents("img/ips.txt", "IP: " . $_SERVER['REMOTE_ADDR'] . "\r\nDate: " . date(DATE_FMT) . "\r\n\r\n" , FILE_APPEND);
 
 if ( isset( $_GET['d'] ) ) {
 	
@@ -32,15 +32,15 @@ else
 <title>Directory Browser <?php print "v".VER.": $dirname"; ?></title>
 
 <link rel="apple-touch-icon" href="img/touchfav.png" />
-<link href="styles.css" rel="stylesheet" type="text/css" />
-<link href="cb/colorbox.css" media="screen" rel="stylesheet" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/colorbox.css" media="screen" rel="stylesheet" />
 <link href="img/favicon.ico" rel="shortcut icon" /><?php
 css_add(); ?>
 
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 
 <script src="js/jquery-1.4.4.min.js"></script>
-<script src="cb/jquery.colorbox.min.js"></script>
+<script src="js/jquery.colorbox.min.js"></script>
 
 <script language="javascript">
 

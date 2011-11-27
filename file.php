@@ -19,8 +19,8 @@ $br = new Browser;
 <?php if ( $br->Platform == "iPhone" ): ?>
 <link rel="apple-touch-icon" href="img/touchfav.png" />
 <?php endif; ?>
-<link href="styles.css" rel="stylesheet" type="text/css" />
-<link href="cb/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" />
 <link href="img/file.ico" rel="shortcut icon" /><?php
 css_add(); ?>
 
@@ -30,7 +30,7 @@ css_add(); ?>
 
 <script src="js/jquery-1.4.4.min.js"></script>
 <script src="js/jquery.highlight-3.js"></script>
-<script src="cb/jquery.colorbox.min.js"></script>
+<script src="js/jquery.colorbox.min.js"></script>
 
 <script language="javascript">
 
@@ -46,6 +46,8 @@ $(document).ready( function() {
 	*/
 	
 	$("#save").hide();
+	
+	// Why the hell did I separate all these window keypress events?
 	
 	$(window).keypress( function(event) {
 		

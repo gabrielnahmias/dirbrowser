@@ -1,3 +1,9 @@
+v1.4   -
+	
+	+ Renamed to "Glide."
+	
+	+ Consolidated most actions into "do.php."
+	
 v1.3.9 -
 	
 	+ Started to migrate to supporting Unix-style paths (/usr/local/ as opposed to C:\Users\Local\)

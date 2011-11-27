@@ -1,0 +1,82 @@
+a { text-decoration: none; }
+a:hover { color: red; }
+
+body { font-family: Verdana; font-size: 10pt; margin: 0; }
+
+button { border: 0; width: 20px; }
+
+hr { border: 1px solid black; color: black; text-align: left; width: 100%; }
+hr.footer { margin: 10px auto 7px 0; }
+hr.footer2 { margin: 15px auto 7px 0; width: 100%; }
+hr.top { margin: 10px auto 10px 0; }
+hr.top2 { margin: 10px auto 10px 0; width: 100%; }
+
+table { border: 0; border-spacing: 2px; margin-left: 10px; width: 90%; }
+td { border: 1px solid black; font-size: 10pt; padding: 3px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; }
+td.action { padding: 8px; width:20px; }
+td.name { text-align: left; }
+td.other { width: 75px; }
+th { background: #DDD; border: 2px solid black; font-size: 10pt; font-weight: bold; padding: 3px; text-align: center; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+th.name { text-align: left; }
+
+img { border: 0; }
+
+#copy { /*background: #aaa; border: 1px solid black;*/ color: green; display: inline; font-weight: bold; -moz-border-radius: 5px 5px 5px 5px; /* padding: 3px;*/ }
+#copy:hover { color: red; cursor: pointer;}
+
+#delall { background: url(../img/delall.png) no-repeat; display:inline; outline: none; }
+#delall:hover { background: url(../img/delallh.png) no-repeat; cursor: pointer; outline: none;}
+
+#delete { color: red; display: inline; font-weight: bold; -moz-border-radius: 5px; }
+#delete:hover { color: #FF0077; cursor: pointer;}
+
+#drives { background: url(../img/drives.png) no-repeat; display:inline; outline: none;}
+#drives:hover { background: url(../img/drivesh.png) no-repeat; cursor: pointer; outline: none;}
+
+#edit { background: url(../img/edit.png) no-repeat; display:inline; outline: none;}
+#edit:hover { background: url(../img/edith.png) no-repeat; cursor: pointer; outline: none;}
+
+#error { border: 1px solid #EC0006; background: #FFAAAC; padding: 10px; }
+
+#footer { font-size: 8pt; margin-left: 10px; padding-bottom: 10px; }
+
+#goto { background: url(../img/goto.png) no-repeat; display:inline; outline: none;}
+#goto:hover { background: url(../img/gotoh.png) no-repeat; cursor: pointer; outline: none;}
+
+#info { display: inline; }
+
+#new { background: url(../img/new.png) no-repeat; display:inline; outline: none;}
+#new:hover { background: url(../img/newh.png) no-repeat; cursor: pointer; outline: none;}
+
+#newhtml { background: url(../img/newhtml.png) no-repeat; display:inline; outline: none;}
+#newhtml:hover { background: url(../img/newhtmlh.png) no-repeat; cursor: pointer; outline: none;}
+
+#newdir { background: url(../img/newdir.png) no-repeat; display: inline; outline: none;}
+#newdir:hover { background: url(../img/newdirh.png) no-repeat; cursor: pointer; outline: none;}
+
+#output { font-family: Courier; font-size: 10pt; height: 88%; margin: -10px 0 -15px 0; overflow: scroll; white-space: nowrap; }
+#output a { font-weight: bold }
+#output a[name] { color: #aaa }
+
+#rename { color: blue; display: inline; font-weight: bold; -moz-border-radius: 5px; }
+#rename:hover { color: red; cursor: pointer; }
+
+#save { background: url(../img/save.png) no-repeat; display: inline; outline: none; }
+#save:hover { background: url(../img/saveh.png) no-repeat; cursor: pointer; outline: none;}
+
+#textbox { background: #FFFEB5; border: 0; color: #550000; display: none; font-family: Courier; font-size: 10pt; font-weight: normal; height: 88%; margin: -10px 0 -15px 0; padding-left: 10px; width: 100%; }
+
+#toolbar { float: right; margin-right: 30px; text-align: center; }
+
+#top { background: white; width: 98%; padding: 10px 0 0 10px; }
+br.top { padding-left: 10px; margin-top: -10px; }
+
+#up { background: url(../img/up.png) no-repeat; display: inline; outline: none; }
+#up:hover { background: url(../img/uph.png) no-repeat; outline: none; }
+
+#upload { background: url(../img/upload.png) no-repeat; cursor: pointer; display: inline; outline: none; }
+#upload:hover { background: url(../img/uploadh.png) no-repeat; outline: none; }
+
+.highlight { background: yellow }
+
+.ln { border-right: 2px dotted #aaa; color: #aaa; display: inline; float:left; margin-right: 20px; padding-left: 10px; min-width:30px; padding-right:10px; }
